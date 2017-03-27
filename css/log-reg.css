@@ -1,6 +1,7 @@
 /*log-reg-page*/
 .log-reg-page{
-  height:100%;
+  position: relative;
+  min-height:100%;
   padding:80px 0 145px;
   box-sizing: border-box;
 }
@@ -101,14 +102,10 @@
 .log-reg-page form .btn.bg-gray{
   color:#fff;
 }
-.log-reg-page form .btn.bg-gray:hover{
+.log-reg-page form .btn.bg-gray:hover,.log-reg-page form .btn.bg-transparent:hover{
   background-color: #feaf41;
   border: 1px solid #feaf41;
   color:#4c4c4c;
-}
-.log-reg-page form .btn.bg-transparent:hover{
-  background-color: #4c4c4c;
-  color:#fff;
 }
 
 /*regist*/

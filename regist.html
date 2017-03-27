@@ -23,12 +23,12 @@
 					<a href="./payment.html" class="menu">金融</a>
 					<a href="./warehouse.html" class="menu">海外仓</a>
         </span>
-        <span class="menu user cur"><img src="./img/profile.png" class="mr-10p"/><a href="./login.html">LOGIN</a>/<a href="./regist.html">REGISTER</a></span>
+        <a class="menu user cur" href="./login.html"><img src="./img/profile.png" class="mr-10p"/><span>LOGIN</span>/<span>REGISTER</span></a>
       </div>
     </div>
   </header>
 
-  <div class="relative h-100 bg-cover" style="background-image:url(./img/login/bg.jpg);">
+  <div class="content-wrap relative bg-cover pb-100p" style="background-image:url(./img/login/bg.jpg);">
     <div class="wrap pt-50p">
       <div><img src="./img/login/regist.png"/></div>
       <div class="mt-5p"><em>链式数据账号注册</em></div>
@@ -70,6 +70,12 @@
 <script src=./js/jquery-1.8.3.min.js></script>
 <script>
 $(function(){
+  var conHeight=$(".content-wrap").outerHeight(true),
+      viewHeight=$(window).height()-$("header").outerHeight()-$("footer").outerHeight();
+  if(conHeight<viewHeight){
+    $(".content-wrap").outerHeight(viewHeight);
+  }
+
   $(".tab-btn .btn").click(function(){
     $(".tab-btn .btn").removeClass("cur");
     $(this).addClass("cur");
