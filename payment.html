@@ -12,43 +12,43 @@
 <style>
 /*pay-page*/
 .pay-page{
-  padding-bottom: 145px;
+  padding-bottom: 1.20rem;
   position: relative;
   min-height: 100%;
   box-sizing: border-box;
 }
 .pay-page .summary{
-  margin: 90px 40px;
+  margin: 1.20rem .40rem;
   background-image:url(./img/payment/pay-picture.jpg);
   background-size: auto 100%;
   background-position: right center;
   padding: 0;
 }
 .pay-page .summary>.left{
-  padding-right:20px;
+  padding-right:.20rem;
   box-sizing: border-box;
   background-color: #fff;
-  min-height: 430px;
+  min-height: 4.30rem;
 }
 .pay-page .summary .h5{
-  margin-bottom: 25px;
+  margin-bottom: .25rem;
 }
 .pay-page .summary .h6{
-  margin-bottom: 10px;
+  margin-bottom: .10rem;
 }
 .pay-page .summary .em{
-  line-height: 30px;
+  line-height: .30rem;
 }
 .pay-page .summary .devide{
-  margin-top: 90px;
+  margin-top: .90rem;
   width: 100%;
 }
 .pay-page .summary .devide .em{
-  line-height: 20px;
+  line-height: .20rem;
 }
 .pay-page .summary .devide .cell{
   border-right: 1px solid #888;
-  padding: 20px;
+  padding: .20rem;
 }
 .pay-page .summary .devide .cell:first-child{
   padding-left: 0;
@@ -58,17 +58,18 @@
   padding-right: 0;
 }
 .pay-page .currency{
-  padding:80px 40px 160px;
+  padding:.80rem .40rem 1.60rem;
+  box-sizing: border-box;
 }
 .pay-page .currency .list{
-  margin-top: 160px;
-  font-size: 22px;
+  margin-top: 1.60rem;
+  font-size: .19rem;
 }
 .pay-page .currency .devide{
   width: 100%;
 }
 .pay-page .currency .devide .cell>*{
-  margin: 10px;
+  margin: .10rem;
   display: inline-block;
   width: 100%;
   white-space: nowrap;
@@ -78,17 +79,17 @@
 <body>
 
 <div class="pay-page">
-  <header class="absolute">
+  <header class="fixed">
     <div class="wrap clearfix">
       <a href="./index.html" class="logo left"><img src="./img/logo.png"/></a>
       <div class="right">
         <span class="collapse">
           <a href="./index.html" class="menu">首页</a>
 					<a href="./route.html" class="menu">物流</a>
-					<a href="./payment.html" class="menu cur">金融</a>
+					<a href="./payment.html" class="menu cur" lang>金融</a>
 					<a href="./warehouse.html" class="menu">海外仓</a>
         </span>
-        <a class="menu user" href="./login.html"><img src="./img/profile.png" class="mr-10p"/><span>LOGIN</span>/<span>REGISTER</span></a>
+				<a class="menu user" href="./login.html"><img src="./img/profile.png"/><img src="./img/profilex.png"/><span class="ml-10p">LOGIN</span>/<span>REGISTER</span></a>
       </div>
     </div>
   </header>
@@ -120,8 +121,8 @@
   </div>
 
 
-  <div class="wrap bg-cover" style="background-image:url(./img/payment/bg-payment.jpg);">
-    <div class="currency">
+  <div class="bg-cover" style="background-image:url(./img/payment/bg-payment.jpg);">
+    <div class="wrap currency">
       <div class="h5">支持币种</div>
       <div class="mt-5p"><img src="./img/payment/text.png"/></div>
         <div class="list devide">
@@ -158,13 +159,14 @@
   </div>
 
   <footer class="absolute bottom">
-    <center class="h6 color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
-    <center class="h6 color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
+    <center class="em color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
+    <center class="em color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
   </footer>
 </div>
 
 </body>
 <script src=./js/jquery-1.8.3.min.js></script>
+<script src=./js/base.js></script>
 <script>
 
 </script>

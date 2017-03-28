@@ -12,8 +12,8 @@
 </head>
 <body>
 
-<div class="log-reg-page">
-  <header class="absolute bg-silver">
+<div class="log-reg-page bg-cover" style="background-image:url(./img/login/bg.jpg);">
+  <header class="fixed bg-silver">
     <div class="wrap clearfix">
       <a href="./index.html" class="logo left"><img src="./img/logo.png"/></a>
       <div class="right">
@@ -23,12 +23,12 @@
 					<a href="./payment.html" class="menu">金融</a>
 					<a href="./warehouse.html" class="menu">海外仓</a>
         </span>
-        <a class="menu user cur" href="./login.html"><img src="./img/profile.png" class="mr-10p"/><span>LOGIN</span>/<span>REGISTER</span></a>
+        <a class="menu user cur" lang href="./login.html"><img src="./img/profile.png"/><img src="./img/profilex.png"/><span class="ml-10p">LOGIN</span>/<span>REGISTER</span></a>
       </div>
     </div>
   </header>
 
-  <div class="content-wrap relative bg-cover pb-100p" style="background-image:url(./img/login/bg.jpg);">
+  <div class="content-wrap relative pb-100p">
     <div class="wrap pt-50p">
       <div><img src="./img/login/regist.png"/></div>
       <div class="mt-5p"><em>链式数据账号注册</em></div>
@@ -61,13 +61,14 @@
   </div>
 
   <footer class="absolute">
-    <center class="h6 color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
-    <center class="h6 color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
+    <center class="em color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
+    <center class="em color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
   </footer>
 </div>
 
 </body>
 <script src=./js/jquery-1.8.3.min.js></script>
+<script src=./js/base.js></script>
 <script>
 $(function(){
   var conHeight=$(".content-wrap").outerHeight(true),
@@ -79,6 +80,13 @@ $(function(){
   $(".tab-btn .btn").click(function(){
     $(".tab-btn .btn").removeClass("cur");
     $(this).addClass("cur");
+  });
+
+  $(".log-reg-page form .input input").focus(function(){
+    $(this).closest(".input").addClass("focus");
+  });
+  $(".log-reg-page form .input input").blur(function(){
+    $(this).closest(".input").removeClass("focus");
   });
 });
 </script>

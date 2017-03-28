@@ -12,32 +12,33 @@
 <style>
 /*warehouse-page*/
 .warehouse-page{
-  padding-bottom: 145px;
+  padding-bottom: 1.20rem;
   position: relative;
   min-height: 100%;
   box-sizing: border-box;
 }
 .warehouse-page .wrap.plr-50p{
-  padding: 0 50px;
+  padding: 0 .50rem;
 }
 .warehouse-page .summary{
-  margin: 150px auto;
+  margin: 1.50rem auto 2.2rem;
   padding: 0;
-  font-size: 18px;
+  font-size: .14rem;
 }
 .warehouse-page .summary>.content{
-  padding-right:500px;
+  padding-right:5.00rem;
   box-sizing: border-box;
-  min-height: 370px;
+  min-height: 3.70rem;
 }
 .warehouse-page .summary .h5{
-  margin-bottom: 30px;
+  margin-bottom: .30rem;
+  font-size:.24rem;
 }
 .warehouse-page .summary .list{
-  line-height: 30px;
+  line-height: .24rem;
 }
 .warehouse-page .summary .table{
-  margin-top: 20px;
+  margin-top: .20rem;
   background: linear-gradient(to right, #a0a0a0, #dfdfdf);
   width: 90%;
   float: left;
@@ -45,7 +46,7 @@
   text-align: center;
 }
 .warehouse-page .summary .table tr{
-  border-top: 3px solid #fff;
+  border-top: .03rem solid #fff;
 }
 .warehouse-page .summary .table tr:first-child{
   background: #fff;
@@ -56,23 +57,20 @@
 .warehouse-page .summary .table td.yes:after{
   content: "√";
   font-weight: bold;
-  font-size: 20px;
+  font-size: .20rem;
   color: #caffb5;
 }
 .warehouse-page .summary .table td.no:after{
   content: "×";
   font-weight: bold;
-  font-size: 22px;
+  font-size: .22rem;
   color: #e08181;
 }
 .warehouse-page .summary td,.warehouse-page .summary th{
-  padding: 5px;
+  padding: .03rem;
 }
 .warehouse-page .summary table .text-left{
-  padding-left: 30px;
-}
-.warehouse-page .summary td.text-left{
-  font-size: 15px;
+  padding-left: .30rem;
 }
 .warehouse-page .summary small{
   vertical-align: 2px;
@@ -87,14 +85,14 @@
   width: auto;
 }
 .warehouse-page .h5{
-  margin-bottom: 100px;
+  margin-bottom: .80rem;
 }
 
 </style>
 <body>
 
 <div class="warehouse-page">
-  <header class="absolute">
+  <header class="fixed">
     <div class="wrap clearfix">
       <a href="./index.html" class="logo left"><img src="./img/logo.png"/></a>
       <div class="right">
@@ -102,9 +100,9 @@
           <a href="./index.html" class="menu">首页</a>
 					<a href="./route.html" class="menu">物流</a>
 					<a href="./payment.html" class="menu">金融</a>
-					<a href="./warehouse.html" class="menu cur">海外仓</a>
+					<a href="./warehouse.html" class="menu cur" lang>海外仓</a>
         </span>
-        <a class="menu user" href="./login.html"><img src="./img/profile.png" class="mr-10p"/><span>LOGIN</span>/<span>REGISTER</span></a>
+				<a class="menu user" href="./login.html"><img src="./img/profile.png"/><img src="./img/profilex.png"/><span class="ml-10p">LOGIN</span>/<span>REGISTER</span></a>
       </div>
     </div>
   </header>
@@ -134,28 +132,26 @@
           <tr><td class="text-left">与FBA仓无缝对接</td><td class="yes"></td><td class="no"></td></tr>
         </table>
       </div>
-      <div class="absolute right-0 top">
-        <img src="./img/warehouse/box.png"/>
-      </div>
+      <img src="./img/warehouse/box.png" class="absolute bottom h-100" style="right:2%;"/>
     </div>
 
     <div class="h5">我们的服务 OUR SERVICE</div>
-    <div class="devide">
+    <div class="devide response-img">
       <div class="cell toggle-img"><img src="./img/warehouse/service-icon1x.png"/><img src="./img/warehouse/service-icon1.png"/></div>
       <div class="cell toggle-img"><img src="./img/warehouse/service-icon2x.png"/><img src="./img/warehouse/service-icon2.png"/></div>
       <div class="cell toggle-img"><img src="./img/warehouse/service-icon3x.png"/><img src="./img/warehouse/service-icon3.png"/></div>
       <div class="cell toggle-img"><img src="./img/warehouse/service-icon4x.png"/><img src="./img/warehouse/service-icon4.png"/></div>
     </div>
 
-    <div class="h5 mt-180p">用户操作流程 USER OPERATION FLOW</div>
-    <div class="devide">
+    <div class="h5 mt-210p">用户操作流程 USER OPERATION FLOW</div>
+    <div class="devide response-img">
       <div class="cell"><img src="./img/warehouse/flow1.png"/></div>
       <div class="cell"><img src="./img/warehouse/flow2.png"/></div>
       <div class="cell"><img src="./img/warehouse/flow3.png"/></div>
       <div class="cell"><img src="./img/warehouse/flow4.png"/></div>
     </div>
 
-    <div class="h5 mt-180p">我们的服务  OUR SERVICE</div>
+    <div class="h5 mt-210p">我们的服务  OUR SERVICE</div>
     <div class="pb-150p"><img src="./img/warehouse/service.png" class="w-100"/></div>
 
   </div>
@@ -163,13 +159,43 @@
 
 
   <footer class="absolute bottom">
-    <center class="h6 color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
-    <center class="h6 color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
+    <center class="em color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
+    <center class="em color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
   </footer>
 </div>
 
 </body>
+<script src=./js/jquery-1.8.3.min.js></script>
+<script src=./js/base.js></script>
 <script>
+
+jQuery.fn.extend({
+
+  /* 图片加载回调 */
+  loadCall : function(fn){
+    var dfs=[];
+    this.each(function(){
+      var dfd=$.Deferred();
+      $(this).bind('load',function(){
+        dfd.resolve();
+      }).bind('error',function(){
+        dfd.resolve();
+      });
+      if(this.complete)setTimeout(function(){
+        dfd.resolve();
+      },100);
+      dfs.push(dfd);
+    });
+    $.when.apply($,dfs).done(fn.bind(this));
+  }
+
+});
+
+$(".response-img img").loadCall(function(){
+  this.each(function(){
+    $(this).width(this.naturalWidth/100+"rem");
+  });
+});
 
 </script>
 </html>

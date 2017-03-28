@@ -2,22 +2,25 @@
 .log-reg-page{
   position: relative;
   min-height:100%;
-  padding:80px 0 145px;
+  padding:.60rem 0 1.20rem;
   box-sizing: border-box;
 }
 .log-reg-page form{
   text-align: center;
-  width: 520px;
-  margin: 50px auto 0;
+  width: 5.20rem;
+  margin: .50rem auto 0;
 }
 .log-reg-page form .input{
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  height: .50rem;
+  line-height: .50rem;
   background: #fff;
-  margin: 10px 0;
-  border-radius: 5px;
+  margin: .10rem 0;
+  border-radius: .05rem;
   display: inline-block;
+}
+.log-reg-page form .input.focus{
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 .log-reg-page form .input:after{
   content: "";
@@ -26,57 +29,57 @@
   visibility:hidden;height:0;
 }
 .log-reg-page form .input .name{
-  width: 90px;
+  width: .90rem;
   border-right: 1px solid #888888;
   color: #888888;
-  height: 30px;
-  line-height: 30px;
+  height: .30rem;
+  line-height: .30rem;
   float: left;
-  margin-top: 10px;
-  padding-right: 20px;
+  margin-top: .10rem;
+  padding-right: .20rem;
   text-align: right;
-  font-size: 16px;
+  font-size: .16rem;
 }
 .log-reg-page form .input .name.border-0{
   border: 0;
 }
 .log-reg-page form .input input{
   border: 0;
-  width: 380px;
+  width: 3.80rem;
   height: 100%;
   float: left;
-  margin-left: 20px;
-  font-size: 16px;
+  margin-left: .20rem;
+  font-size: .16rem;
 }
 .log-reg-page form .input.verify .name{
-  width: 106px;
+  width: 1.06rem;
 }
 .log-reg-page form .input.verify input{
-  width: 200px;
+  width: 2.00rem;
 }
 .log-reg-page form .input.verify .button{
-  width: 150px;
+  width: 1.50rem;
   text-align: center;
-  font-size: 16px;
+  font-size: .16rem;
   color: #fff;
   background-color: #feaf41;
-  margin: 4px;
-  border-radius: 5px;
-  height: 42px;
-  line-height: 42px;
+  margin: .04rem;
+  border-radius: .05rem;
+  height: .42rem;
+  line-height: .42rem;
   float: right;
   cursor: pointer;
 }
 .log-reg-page .slider-wrap{
   background-color: #cecfd1;
   text-align: center;
-  font-size: 16px;
+  font-size: .16rem;
   color: #fff;
-  border-radius: 5px;
+  border-radius: .05rem;
   margin: 2px 0;
-  height: 46px;
-  line-height: 46px;
-  width: 408px;
+  height: .46rem;
+  line-height: .46rem;
+  width: 4.08rem;
   float: left;
   position: relative;
 }
@@ -92,12 +95,12 @@
 }
 .log-reg-page form .btn{
   width:100%;
-  height:60px;
-  line-height: 60px;
-  border-radius: 5px;
-  font-size: 20px;
+  height:.60rem;
+  line-height: .60rem;
+  border-radius: .05rem;
+  font-size: .20rem;
   border: 1px solid #4c4c4c;
-  margin: 10px 0;
+  margin: .10rem 0;
 }
 .log-reg-page form .btn.bg-gray{
   color:#fff;
@@ -111,22 +114,22 @@
 /*regist*/
 .log-reg-page .tab-btn{
   text-align: left;
-  padding-left: 5px;
+  padding-left: .05rem;
 }
 .log-reg-page .tab-btn .btn{
-  padding: 10px 20px;
+  padding: .10rem .20rem;
   border: 0;
   width: auto;
   height: auto;
   line-height: normal;
-  font-size: 16px;
+  font-size: .16rem;
 }
 .log-reg-page .tab-btn .btn.cur{
   background-color: #cecfd1;
   color: #fff;
-  border-radius: 8px;
+  border-radius: .08rem;
 }
 .log-reg-page .regBtn{
-  height: 70px !important;
-  line-height: 70px !important;
+  height: .70rem !important;
+  line-height: .70rem !important;
 }
