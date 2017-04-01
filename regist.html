@@ -13,8 +13,8 @@
 <body>
 
 <div class="log-reg-page bg-cover" style="background-image:url(./img/login/bg.jpg);">
-  <header class="fixed bg-silver">
-    <div class="wrap clearfix">
+  <header class="fixed bg-silver om-1680">
+    <div class="wrap om-1680 clearfix">
       <a href="./index.html" class="logo left"><img src="./img/logo.png"/></a>
       <div class="right">
         <span class="collapse">
@@ -29,7 +29,7 @@
   </header>
 
   <div class="content-wrap relative pb-100p">
-    <div class="wrap pt-50p">
+    <div class="wrap om-1680 pt-50p">
       <div><img src="./img/login/regist.png"/></div>
       <div class="mt-5p"><em>链式数据账号注册</em></div>
       <form>
@@ -60,7 +60,7 @@
     </div>
   </div>
 
-  <footer class="absolute">
+  <footer class="om-1680 absolute">
     <center class="em color-gray9">友情链接:<a href="https://m.kuaidi100.com/" target="_blank" class="toggle-img"><img src="./img/kuaidi100.png"/><img src="./img/kuaidi100x.png"/></a></center>
     <center class="em color-white">版权所有-苏ICP备1021234567号-3 -- 由三宝链式提供技术支持</center>
   </footer>
@@ -71,12 +71,13 @@
 <script src=./js/base.js></script>
 <script>
 $(function(){
+  /*
   var conHeight=$(".content-wrap").outerHeight(true),
       viewHeight=$(window).height()-$("header").outerHeight()-$("footer").outerHeight();
   if(conHeight<viewHeight){
     $(".content-wrap").outerHeight(viewHeight);
   }
-
+  */
   $(".tab-btn .btn").click(function(){
     $(".tab-btn .btn").removeClass("cur");
     $(this).addClass("cur");

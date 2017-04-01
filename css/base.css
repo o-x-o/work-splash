@@ -16,6 +16,11 @@ img{vertical-align:middle;border:0;}
 a{color: #666;text-decoration: none;outline: 0;}
 li{display: list-item;text-align: -webkit-match-parent;}
 ul,ol{list-style-type:none;}
+::selection {
+    background: #feaf41;
+		background-color: #484852;
+    color: #fff;
+}
 .clearfix:after{content:"";display:block;visibility:hidden;height:0;clear:both;}
 .left{float:left;}
 .right{float:right;}
@@ -37,6 +42,7 @@ ul,ol{list-style-type:none;}
 .devide>.cell{display: table-cell;}
 
 .w-100{width:100%;}
+.w-80{width:80%;}
 .w-70{width:70%;}
 .w-60{width:60%;}
 .w-50{width:50%;}
@@ -154,7 +160,7 @@ header img{
 	position: relative;
 }
 header .logo img{
-	height: 30px;
+	height: .30rem;
 }
 header .user img{
 	top: -.02rem;
@@ -164,9 +170,11 @@ header .user img:last-of-type{
 	display: none;
 }
 header .menu{
-	border-bottom:.08rem solid transparent;
-	padding:.12rem .22rem;
-	margin:0 .05rem;
+	border-bottom: .06rem solid transparent;
+	padding: .06rem .22rem .00rem;
+	margin: 0 .05rem;
+	line-height: .50rem;
+	float: left;
 }
 header .menu.user{
 	padding-left:0;
@@ -185,11 +193,12 @@ header.transparent a:hover,header.transparent a.cur{
 header.transparent .menu:hover,header.transparent .menu.cur{
 	border-color: transparent;
 }
-@media (max-width: 880px) {
+@media (max-width: 800px) {
 	header .collapse{
 		display: none;
 	}
 }
+
 
 /*footer*/
 footer{
@@ -198,13 +207,75 @@ footer{
 	bottom:0;
 	background-color: #484852;
 	margin:0;
-	padding: .10rem 0 .14rem;
+	padding: .10rem 0 .20rem;
+}
+footer .em{
+	font-size: .15rem;
 }
 footer>center{
 	margin:0 .10rem;
 }
 footer img{
-	outline:.01rem solid #999;
-	margin:.20rem;
-	height: .40rem;
+	outline: 1px solid #999;
+	margin: .22rem;
+	height: .36rem;
 }
+
+
+/*wrap 1680
+.wrap.om-1680{
+	padding-left: .56rem;
+	padding-right: .56rem;
+}
+
+header.om-1680{
+	height:.84rem;
+	line-height: .84rem;
+	font-size: .25rem;
+}
+header.om-1680 .logo img{
+	height: .42rem;
+}
+header.om-1680 .user img{
+	top: -.03rem;
+  height: .28rem;
+	right: .01rem;
+}
+header.om-1680 .menu{
+	border-bottom: .09rem solid transparent;
+  padding: .09rem .31rem .00rem;
+  margin: 0 .09rem;
+  line-height: .67rem;
+}
+header.om-1680 .menu.user{
+	padding-left:0;
+	padding-right:0;
+	margin-left: .22rem;
+}
+header.om-1680 .menu:hover,header.om-1680 .menu.cur{
+	border-color: #484852;
+}
+header.om-1680.transparent{
+	background-color: transparent !important;
+}
+header.om-1680.transparent a:hover,header.om-1680.transparent a.cur{
+	color: #fff;
+}
+header.om-1680.transparent .menu:hover,header.om-1680.transparent .menu.cur{
+	border-color: transparent;
+}
+
+footer.om-1680{
+	padding: .15rem 0 .28rem;
+}
+footer.om-1680 .em {
+  font-size: .21rem;
+}
+footer.om-1680>center{
+	margin:0 .10rem;
+}
+footer.om-1680 img{
+	margin: .30rem;
+	height: .50rem;
+}
+*/
