@@ -20,7 +20,7 @@
   display: inline-block;
 }
 .log-reg-page form .input.focus{
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px .15rem rgba(0, 0, 0, 0.3);
 }
 .log-reg-page form .input:after{
   content: "";
@@ -76,7 +76,7 @@
   font-size: .16rem;
   color: #fff;
   border-radius: .05rem;
-  margin: 2px 0;
+  margin: .02rem 0;
   height: .46rem;
   line-height: .46rem;
   width: 4.08rem;
@@ -87,6 +87,13 @@
   height: 100%;
   left:0;
   top:0;
+}
+.log-reg-page .slider-wrap .slider_bg{
+  background-color: #feaf41;
+  border-radius: 0.05rem;
+}
+.log-reg-page .slider-wrap .slider_label{
+  z-index: 100;
 }
 .log-reg-page .slider-wrap img{
   vertical-align: baseline;
