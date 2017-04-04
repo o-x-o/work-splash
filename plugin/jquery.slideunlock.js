@@ -54,7 +54,7 @@
     SliderUnlock.prototype.init = function () {
         var me = this;
 
-        me.updateView();
+        //me.updateView();
         me.elm.find(".slider_label").on("mousedown", function (event) {
             var e = event || window.event;
             me.lableIndex = e.clientX - this.offsetLeft;
@@ -154,7 +154,6 @@
      */
     SliderUnlock.prototype.updateView = function () {
         var me = this;
-
         me.sliderBg.css('width', me.index + me.labelWidth());
         me.elm.find(".slider_label").css("left", me.index + "px")
     };
@@ -166,7 +165,7 @@
         var me = this;
 
         me.index = 0;
-        me.sliderBg .animate({'width':0},me.opts.duration);
+        me.sliderBg.animate({'width':0},me.opts.duration);
         me.elm.find(".slider_label").animate({left: me.index}, me.opts.duration)
             .next("#lableTip").animate({opacity: 1}, me.opts.duration);
         me.updateView();
