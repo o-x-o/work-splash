@@ -210,6 +210,7 @@ header.transparent .menu:hover,header.transparent .menu.cur{
 	}
 }
 
+
 /*footer*/
 footer{
 	z-index: 100;
@@ -230,6 +231,7 @@ footer img{
 	margin: .22rem;
 	height: .36rem;
 }
+
 
 .customer-service{
 	display:none !important;

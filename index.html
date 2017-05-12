@@ -61,7 +61,7 @@
 .index-page .section:last-child .btns-group{
 	width:65%;
 	top:50%;
-	margin-top: -3.58rem;
+	margin-top: -3.10rem;
 }
 .index-page .section:last-child .btns-group>a{
 	display: block;
@@ -114,6 +114,9 @@
 .index-page .btn{
 	transition: all .5s;
 }
+.index-page .section:last-child .btns-group{
+	left:33%;
+}
 
 </style>
 </head>
@@ -124,7 +127,7 @@
 		<div class="wrap om-1680 clearfix">
 			<a href="./index.html" class="logo left"><img src="http://mycyberstar.oss-cn-hangzhou.aliyuncs.com/cyberstar-static/img/logo.png"/></a>
 			<div class="right">
-				<span class="collapse">
+				<span class="collapsable">
 					<a href="./index.html" class="menu cur" lang>首页</a>
 					<a href="./route.html" class="menu">物流</a>
 					<a href="./payment.html" class="menu">金融</a>
@@ -330,7 +333,11 @@ $(function(){
 	window.LoadDeferred=$.Deferred();
 	$(".response-img img").loadCall(function(){
 		this.each(function(){
-			$(this).width(this.naturalWidth/100+"rem");
+			if($(this).is(".btns-group img")){
+				$(this).width(this.naturalWidth/110+"rem");
+			}else{
+				$(this).width(this.naturalWidth/100+"rem");
+			}
 		});
 		/*首屏动画*/
 		$.when(LoadDeferred).done(function(){
